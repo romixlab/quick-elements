@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/lamp.png</file>
+        <file>img/lamp-light.png</file>
+    </qresource>
+</RCC>

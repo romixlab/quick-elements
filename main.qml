@@ -7,11 +7,18 @@ Window {
     height: 360
     color: "gray"
 
-    Lamp {
-        x: 50
-        y: 50
-       // width: 64
-        intensity: 0.4
-        dimmable: false
+    Background {
+        anchors.fill: parent
+        style: "carbon"
     }
+
+    Box {
+        width: 100; height: 100
+        x: 50; y: 50
+        ToggleSwitch {
+            anchors.centerIn: parent
+        }
+    }
+
+
 }

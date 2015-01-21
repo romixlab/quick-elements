@@ -2,5 +2,8 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>Lamp.qml</file>
+        <file>Background.qml</file>
+        <file>Box.qml</file>
+        <file>ToggleSwitch.qml</file>
     </qresource>
 </RCC>

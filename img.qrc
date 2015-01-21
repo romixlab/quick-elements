@@ -2,5 +2,14 @@
     <qresource prefix="/">
         <file>img/lamp.png</file>
         <file>img/lamp-light.png</file>
+        <file>img/background/brushed.jpg</file>
+        <file>img/background/carbon.jpg</file>
+        <file>img/background/dust.jpg</file>
+        <file>img/background/grunge.jpg</file>
+        <file>img/background/noise.jpg</file>
+        <file>img/background/space.jpg</file>
+        <file>img/box.png</file>
+        <file>img/toggle-switch/down.png</file>
+        <file>img/toggle-switch/up.png</file>
     </qresource>
 </RCC>

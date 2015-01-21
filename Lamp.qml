@@ -4,7 +4,8 @@ Item {
     id: root
     property double intensity: 0.5
     property bool dimmable: true
-    width: 128; height: 230
+    property double ratio: width / 128
+    width: 128; height: 230 * ratio
 
     Image {
         id: lamp_img
@@ -16,13 +17,13 @@ Item {
     Item {
         id: lightItem
         width: root.width
-        height: 156 * intensity
-        y: 156 - height
+        anchors.bottom: parent.bottom
+        height: (parent.height - 74 * ratio) * intensity + 74 * ratio
         clip: true
         Image {
             id: lightImg
             anchors.bottom: parent.bottom
-            //height: 50
+            width: parent.width
             fillMode: Image.PreserveAspectFit
             source: "img/lamp-light.png"
         }
@@ -35,9 +36,10 @@ Item {
         anchors.fill: parent
         onMouseYChanged: {
             if (!dimmable) return
-            intensity = (156 - mouseY) / 156
+            intensity = (156 * ratio - mouseY) / (156 * ratio)
             if (intensity < 0) intensity = 0
             if (intensity > 1) intensity = 1
+            console.log(intensity)
         }
         onClicked: {
             if (dimmable) return

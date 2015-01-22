@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fonts/Segment14.otf</file>
+    </qresource>
+</RCC>

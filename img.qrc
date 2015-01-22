@@ -11,5 +11,13 @@
         <file>img/box.png</file>
         <file>img/toggle-switch/down.png</file>
         <file>img/toggle-switch/up.png</file>
+        <file>GMS/img/button.png</file>
+        <file>GMS/img/button-fx.png</file>
+        <file>GMS/img/button-fx-a.png</file>
+        <file>GMS/img/led.png</file>
+        <file>GMS/img/led_button.png</file>
+        <file>GMS/img/panel.jpg</file>
+        <file>GMS/img/switch.png</file>
+        <file>GMS/img/knob.png</file>
     </qresource>
 </RCC>

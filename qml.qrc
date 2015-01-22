@@ -5,5 +5,14 @@
         <file>Background.qml</file>
         <file>Box.qml</file>
         <file>ToggleSwitch.qml</file>
+        <file>Segment14.qml</file>
+        <file>GMS/Button.qml</file>
+        <file>GMS/ButtonFX.qml</file>
+        <file>GMS/GroupBox.qml</file>
+        <file>GMS/Knob.qml</file>
+        <file>GMS/Label.qml</file>
+        <file>GMS/Led.qml</file>
+        <file>GMS/LedButton.qml</file>
+        <file>GMS/Switch.qml</file>
     </qresource>
 </RCC>

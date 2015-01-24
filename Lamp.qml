@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.3
 
 Item {
     id: root
@@ -12,6 +12,7 @@ Item {
         source: "img/lamp.png"
         anchors.fill: parent
         fillMode: Image.PreserveAspectFit
+        mipmap: true
     }
 
     Item {
@@ -26,10 +27,9 @@ Item {
             width: parent.width
             fillMode: Image.PreserveAspectFit
             source: "img/lamp-light.png"
+            mipmap: true
         }
     }
-
-
 
     MouseArea {
         id: mouse
@@ -39,7 +39,6 @@ Item {
             intensity = (156 * ratio - mouseY) / (156 * ratio)
             if (intensity < 0) intensity = 0
             if (intensity > 1) intensity = 1
-            console.log(intensity)
         }
         onClicked: {
             if (dimmable) return

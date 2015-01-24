@@ -3,7 +3,7 @@ import QtQuick 2.0
 Item {
     id: root
     width: 30; height: 31
-    property bool on: false
+    property bool pressed: false
     property alias text: label.text
 
     Image {
@@ -27,11 +27,11 @@ Item {
 
     MouseArea {
         anchors.fill: parent
-        onClicked: root.on = !root.on
+        onClicked: root.pressed = !root.pressed
     }
 
     states: State {
-        name: "active"; when: root.on
+        name: "active"; when: root.pressed
         PropertyChanges { target: fx; opacity: 0.0 }
         PropertyChanges { target: fxa; opacity: 1.0 }
     }

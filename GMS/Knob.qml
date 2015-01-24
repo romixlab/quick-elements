@@ -14,6 +14,12 @@ Item {
         id: knobImg
     }
 
+    onValueChanged: {
+        var percent = value / (maximumValue - minimumValue)
+        var idx = Math.round(percent * 128)
+        knobImg.y = -idx * 32.005
+    }
+
     MouseArea {
         anchors.fill: parent
         property int yStart
@@ -25,9 +31,6 @@ Item {
                 value = maximumValue
             if (value < minimumValue)
                 value = minimumValue
-            var percent = value / (maximumValue - minimumValue)
-            var idx = Math.round(percent * 128)
-            knobImg.y = -idx * 32.005
         }
     }
 }

@@ -4,7 +4,7 @@ import QtGraphicalEffects 1.0
 Item {
     id: root
     property alias text: label.text
-    property bool glow: false
+    property bool glow: true
     width: label.width; height: label.height
 
     Text {
